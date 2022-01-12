@@ -20,7 +20,6 @@ set shiftwidth=2
 set expandtab
 
 set termguicolors
-colorscheme xcodedark
 
 set laststatus=2
 set statusline=
@@ -28,7 +27,7 @@ set statusline+=%#markdownCode#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#LineNr#
 set statusline+=\ %f
-set statusline+=%m\
+set statusline+=%m
 set statusline+=%=
 set statusline+=%#markdownCode#
 set statusline+=\ %y
@@ -62,8 +61,11 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' 
 Plug 'scrooloose/nerdcommenter'
+Plug 'arzg/vim-colors-xcode'
 
 call plug#end()
+
+colorscheme xcodedark
 
 " Commenter plugin 
 vmap ++ <plug>NERDCommenterToggle
